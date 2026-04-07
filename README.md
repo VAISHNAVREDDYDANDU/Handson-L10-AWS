@@ -1,36 +1,48 @@
-# Hands-on L11: AWS Core Services
-🎯 Objective
+# AWS Core Services Hands-on (L11)
 
-This project demonstrates how to use AWS services to:
+## Course
+Cloud Computing for Data Analysis (ITCS 6190/8190) – Spring 2026
 
-Store data in S3
-Crawl data using AWS Glue
-Monitor jobs using CloudWatch
-Query data using Athena
-📂 Dataset
-Source: Kaggle E-commerce Sales Dataset
-Uploaded as CSV file into S3
-⚙️ Steps Performed
-1️⃣ Created S3 Bucket
-Created an S3 bucket
-Uploaded CSV dataset
-Organized raw data folder
-2️⃣ Created IAM Role
-Created IAM role with permissions:
-S3 access
-Glue access
-Attached role to Glue crawler
-3️⃣ Created Glue Crawler
-Configured crawler using:
-Data source: S3 bucket
-IAM role
-Set database name
-Created tables automatically
-4️⃣ Ran Crawler & Monitored (CloudWatch)
-Executed crawler
-Checked logs in CloudWatch
-Verified successful table creation
-5️⃣ Queried Data Using Athena
-Opened Athena Query Editor
-Selected database created by Glue
-Ran SQL queries
+---
+
+## Objective
+This project shows how to use AWS services like S3, Glue, CloudWatch, and Athena to process and query data.
+
+---
+
+## Dataset
+E-commerce sales dataset (CSV file uploaded to S3)
+
+---
+
+## Steps Performed
+
+### 1. S3 Bucket
+- Created S3 bucket
+- Uploaded CSV dataset
+
+### 2. IAM Role
+- Created IAM role
+- Added permissions for S3 and Glue
+
+### 3. Glue Crawler
+- Created crawler
+- Connected to S3 data
+- Created database and tables
+
+### 4. CloudWatch
+- Ran crawler
+- Checked logs in CloudWatch
+
+### 5. Athena
+- Opened Athena
+- Selected database
+- Ran SQL queries
+
+---
+
+## Queries
+
+### Query 1
+```sql
+SELECT * FROM table_name LIMIT 10;
