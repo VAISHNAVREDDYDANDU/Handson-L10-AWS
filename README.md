@@ -113,3 +113,8 @@ This query groups the data by month and calculates total orders and revenue for 
 This query finds the top 5 best-selling SKUs in each category based on revenue. It also shows total units sold and rank within each category.
 <img width="1466" height="797" alt="Q5" src="https://github.com/user-attachments/assets/3b01c734-c03d-4961-a1a9-a5e82f99f424" />
 <img width="1467" height="799" alt="Q5 result" src="https://github.com/user-attachments/assets/72783f34-adf4-431c-a9dc-6abd0e146df3" />
+
+## Challenges Faced
+- Faced issues while configuring IAM roles and assigning correct permissions for S3 and Glue access.  
+- Encountered errors in Athena queries due to incorrect column names and data format mismatches.  
+- Understanding Glue crawler setup and automatic table creation took some time initially.  
